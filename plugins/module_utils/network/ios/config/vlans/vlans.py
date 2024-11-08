@@ -70,6 +70,7 @@ class Vlans(ResourceModule):
     def segregate_resource(self):
         self.want_vlan_config = []
         self.have_vlan_config = []
+
         for vlan_data in self.want:
             if vlan_data.get("member"):
                 self.want_vlan_config.append(
