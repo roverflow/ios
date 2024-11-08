@@ -1,3 +1,6 @@
+# For CML
+virl2-client==2.6.1
+
 # For ansible-tox-linters
 black==23.3.0
 flake8
