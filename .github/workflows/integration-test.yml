@@ -1,3 +1,4 @@
+---
 name: Integration
 on:
   pull_request_target:
@@ -22,7 +23,7 @@ jobs:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   integration:
-    uses:  ansible/ansible-content-actions/.github/workflows/network_integration.yaml@main
+    uses: ansible/ansible-content-actions/.github/workflows/network_integration.yaml@main
     needs:
       - safe-to-test
     with:
